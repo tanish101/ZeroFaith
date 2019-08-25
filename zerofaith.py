@@ -118,7 +118,7 @@ async def remind(ctx, time=None, *,remind=None):
 
 @client.event
 async def on_message(message):
-    if message.content.find("!hello") != -1:
-        await message.channel.send("Hi") # If the user says !hello we will send back hi
+    if message.content.find("&help") != -1:
+        await message.channel.send("Under development") # If the user says !hello we will send back hi
 
 client.run(os.getenv('Token'))
