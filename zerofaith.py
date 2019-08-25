@@ -116,5 +116,9 @@ async def remind(ctx, time=None, *,remind=None):
     await client.say("Reminder: {} by {}".format(remind, ctx.message.author.mention))
     await client.send_message(ctx.message.author, "Reminder: {}".format(remind))
 
+@client.event
+async def on_message(message):
+    if message.content.find("!hello") != -1:
+        await message.channel.send("Hi") # If the user says !hello we will send back hi
 
 client.run(os.getenv('Token'))
