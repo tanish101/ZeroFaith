@@ -1,1 +1,1 @@
-worker:zerofaith.py
+worker: python zerofaith.py
