@@ -115,12 +115,5 @@ async def remind(ctx, time=None, *,remind=None):
     await asyncio.sleep(time)
     await client.say("Reminder: {} by {}".format(remind, ctx.message.author.mention))
     await client.send_message(ctx.message.author, "Reminder: {}".format(remind))
-
-@client.event
-async def on_message(message):
-    if message.content.find("&help") != -1:
-        await message.channel.send("&membercount is available Under development") # If the user says !hello we will send back hi
-elif message.content == "!membercount":
-        await message.channel.send(f"""# of Members: {id.member_count}""")
 	
 client.run(os.getenv('Token'))
