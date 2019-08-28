@@ -1,1 +1,1 @@
-worker: Zerofaith run bot
+worker: pipenv run bot
