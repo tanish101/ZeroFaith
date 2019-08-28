@@ -1,0 +1,27 @@
+{
+  "name": "ZeroFaith",
+  "description": "DM to contact mods!",
+  "repository": "https://github.com/kyb3r/modmail",
+  "env": {
+    "TOKEN": {
+      "description": "NjE1MDQxMDI0MDUzNDc3Mzk1.XWYuSA.tDHFxQCcLiISP0AhSAVx5Wq8_4U",
+      "required": true
+    },
+    "GUILD_ID": {
+      "description": "560633258094624806",
+      "required": true
+    },
+    "OWNERS": {
+      "description": "616173904385540106",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "https://dashboard.heroku.com/apps/zerofaith/deploy/github",
+      "required": true
+    },
+    "LOG_URL": {
+      "description": "https://dashboard.heroku.com/apps/zerofaith/deploy/github",
+      "required": true
+    }
+  }
+}
