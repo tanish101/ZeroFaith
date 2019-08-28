@@ -1,0 +1,1 @@
+worker: Zerofaith run bot
